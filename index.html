@@ -1,109 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Youngsun Kong</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #0f1117;
-      color: #e6edf3;
-      overflow: hidden;
-    }
-
-    canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 0;
-    }
-
-    .content {
-      position: relative;
-      z-index: 1;
-      padding: 80px;
-      max-width: 800px;
-    }
-
-    h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 18px;
-      opacity: 0.8;
-    }
-
-    a {
-      color: #58a6ff;
-      text-decoration: none;
-    }
-  </style>
+  <title>Youngsun Kong, Ph.D.</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<canvas id="bg"></canvas>
-<div class="content">
+<div class="page">
+
+<header class="header">
   <h1>Youngsun Kong, Ph.D.</h1>
-  <p>Researcher in AI + physiological signals.</p>
-  <p>Building digital physiomarkers.</p>
-  <p>
-    <a href="https://scholar.google.com/citations?user=umVnb8oAAAAJ&hl=en&oi=ao">Google Scholar</a> · 
-    <a href="https://github.com/ykong-phd">GitHub</a> · 
-    <a href="mailto:youngsun.kong.phd@gmail.com">Email</a>
+  <p class="title">Postdoctoral Research Fellow (NIH NRSA F32), Biomedical Engineering</p>
+  <p class="affil">University of Connecticut, Storrs, CT</p>
+
+  <p class="tagline">Signal Processing and AI for Digital Physiomarkers</p>
+
+  <p class="contact-line">
+    <a href="mailto:youngsun.kong.phd@gmail.com">youngsun.kong.phd@gmail.com</a>
+    &nbsp;&middot;&nbsp;
+    <a href="CV.pdf" target="_blank">CV</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://scholar.google.com/citations?user=umVnb8oAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://github.com/ykong-phd" target="_blank">GitHub</a>
   </p>
+</header>
 
-  <p>Under Construction</p>
+<nav class="toc">
+  <a href="#research">Research</a>
+  <a href="#education">Education</a>
+  <a href="#appointments">Appointments</a>
+  <a href="#grants">Grants</a>
+  <a href="#awards">Awards</a>
+  <a href="#publications">Publications</a>
+  <a href="#service">Teaching &amp; Service</a>
+</nav>
+
+<section id="research">
+  <h2>Research Interests</h2>
+  <p>
+    I develop signal processing, machine learning, and AI methods to recover physiologically meaningful signals and derive digital physiomarkers from complex biosignals. My research focuses on the objective assessment of pain and autonomic states using electrodermal activity and ECG-derived skin nerve activity.
+  </p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul class="cv-list">
+    <li>
+      <span class="cv-main"><strong>Ph.D., Biomedical Engineering</strong> &mdash; University of Connecticut</span>
+      <span class="cv-date">2022</span>
+    </li>
+    <li>
+      <span class="cv-main"><strong>B.S. &amp; M.S., Computer Science and Engineering</strong> &mdash; Soonchunhyang University</span>
+      <span class="cv-date">2015/2017</span>
+    </li>
+  </ul>
+</section>
+
+<section id="appointments">
+  <h2>Academic Appointments</h2>
+  <ul class="cv-list">
+    <li>
+      <span class="cv-main">Postdoctoral Research Fellow (NIH NRSA F32), University of Connecticut</span>
+      <span class="cv-date">2024&ndash;Present</span>
+    </li>
+    <li>
+      <span class="cv-main">Postdoctoral Research Associate, University of Connecticut</span>
+      <span class="cv-date">2022&ndash;2024</span>
+    </li>
+  </ul>
+</section>
+
+<section id="grants">
+  <h2>Selected Grants &amp; Funding</h2>
+  <ul class="cv-list">
+    <li>
+      <span class="cv-main">NIH/NIDCR Ruth L. Kirschstein Postdoctoral Individual NRSA (F32), Role: PI</span>
+      <span class="cv-date">2024&ndash;2027</span>
+    </li>
+    <li>
+      <span class="cv-main">Defense Health Agency STTR Program, Phase II, Role: Co-I</span>
+      <span class="cv-date">2024&ndash;2026</span>
+    </li>
+  </ul>
+</section>
+
+<section id="awards">
+  <h2>Selected Awards</h2>
+  <ul class="cv-list">
+    <li>
+      <span class="cv-main">YP Paper Competition Top 10 Finalist, IEEE EMBC</span>
+      <span class="cv-date">2025</span>
+    </li>
+    <li>
+      <span class="cv-main">NIH Ruth L. Kirschstein Postdoctoral Individual NRSA (F32)</span>
+      <span class="cv-date">2024</span>
+    </li>
+    <li>
+      <span class="cv-main">Best Paper Award, 3rd Place, IEEE-EMBS International Conference on Body Sensor Networks</span>
+      <span class="cv-date">2023</span>
+    </li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Selected Publications</h2>
+  <p class="pub-summary">
+    44 peer-reviewed journal articles (18 as first author). Full list in <a href="CV.pdf" target="_blank">CV</a> or <a href="https://scholar.google.com/citations?user=umVnb8oAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>.
+  </p>
+  <ol class="pub-list">
+    <li>Kong, Y., Baghestani, F., D&rsquo;Angelo, W., Chen, I. P., &amp; Chon, K. H. (2025). A new approach to characterize dynamics of ECG-derived skin nerve activity via time-varying spectral analysis. <em>IEEE Transactions on Affective Computing</em>.</li>
+    <li>Kong, Y., &amp; Chon, K. H. (2024). Electrodermal activity in pain assessment and its clinical applications. <em>Applied Physics Reviews</em>, 11(3).</li>
+    <li>Kong, Y., Hossain, M. B., Peitzsch, A., Posada-Quintero, H. F., &amp; Chon, K. H. (2024). Automatic motion artifact detection in electrodermal activity signals using 1D U-net architecture. <em>Computers in Biology and Medicine</em>, 182, 109139.</li>
+    <li>Kong, Y., Posada-Quintero, H. F., &amp; Chon, K. H. (2021). Sensitive physiological indices of pain based on differential characteristics of electrodermal activity. <em>IEEE Transactions on Biomedical Engineering</em>, 68(10), 3122&ndash;3130.</li>
+    <li>Kong, Y., Posada-Quintero, H. F., &amp; Chon, K. H. (2021). Real-time high-level acute pain detection using a smartphone and a wrist-worn electrodermal activity sensor. <em>Sensors</em>, 21(12), 3956.</li>
+  </ol>
+</section>
+
+<section id="service">
+  <h2>Teaching &amp; Service</h2>
+
+  <h3>Teaching</h3>
+  <ul class="cv-list">
+    <li>
+      <span class="cv-main">Guest Lecturer, University of Connecticut<br>
+        <span class="cv-sub">BME 6086, Advanced Biomedical Signal Processing &middot; ENER 1166, Foundations of AI: Machine Learning</span>
+      </span>
+      <span class="cv-date">2022&ndash;Present</span>
+    </li>
+  </ul>
+
+  <h3>Editorial &amp; Review Service</h3>
+  <ul class="cv-list">
+    <li><span class="cv-main">Associate Editor, <em>Frontiers in Pain Research</em></span></li>
+    <li><span class="cv-main">Associate Editor, IEEE Engineering in Medicine and Biology Conference (EMBC)</span></li>
+    <li><span class="cv-main">Ad hoc reviewer: Nature Communications, IEEE Journal of Biomedical and Health Informatics, Scientific Reports, and others</span></li>
+  </ul>
+</section>
+
+<footer class="footer">
+  <p><a href="mailto:youngsun.kong.phd@gmail.com">youngsun.kong.phd@gmail.com</a></p>
+</footer>
+
 </div>
-
-<script>
-const canvas = document.getElementById("bg");
-const canvas = document.getElementById("bg");
-
-if (!canvas) {
-  console.log("Canvas not found");
-} else {
-  const ctx = canvas.getContext("2d");
-
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-
-  let particles = [];
-
-  for (let i = 0; i < 80; i++) {
-    particles.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      vx: (Math.random() - 0.5),
-      vy: (Math.random() - 0.5)
-    });
-  }
-
-  function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    particles.forEach(p => {
-      p.x += p.vx;
-      p.y += p.vy;
-
-      if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
-      if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
-
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
-      ctx.fillStyle = "#58a6ff";
-      ctx.fill();
-    });
-
-    requestAnimationFrame(draw);
-  }
-
-  draw();
-}
-</script>
-  
 
 </body>
 </html>
