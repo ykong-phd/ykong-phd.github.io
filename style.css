@@ -162,6 +162,10 @@ a:hover {
   font-size: 13px;
 }
 
+.cv-list-pending .cv-main {
+  color: #888;
+}
+
 /* PUBLICATIONS */
 .pub-summary {
   color: #555;
