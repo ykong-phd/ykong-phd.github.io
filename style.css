@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
-  background: #fbfaf8;
-  color: #1c1c1c;
+  background: #1a1b1e;
+  color: #e4e2dd;
   line-height: 1.55;
 }
 
@@ -46,14 +46,14 @@ body {
 
 .affil {
   font-size: 14px;
-  color: #555;
+  color: #a8a6a0;
   margin: 0 0 10px;
 }
 
 .tagline {
   font-size: 14px;
   font-style: italic;
-  color: #2b4a7a;
+  color: #7fa8d9;
   margin: 0 0 14px;
 }
 
@@ -66,14 +66,14 @@ body {
 .toc {
   margin: 24px 0 40px;
   padding: 10px 0;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #3a3b3f;
+  border-bottom: 1px solid #3a3b3f;
   font-size: 13px;
 }
 
 .toc a {
   margin-right: 18px;
-  color: #1c1c1c;
+  color: #e4e2dd;
 }
 
 .toc a:last-child {
@@ -90,7 +90,7 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #3a3b3f;
   padding-bottom: 6px;
   margin: 0 0 14px;
 }
@@ -98,7 +98,7 @@ h2 {
 h3 {
   font-size: 13px;
   font-weight: 700;
-  color: #555;
+  color: #a8a6a0;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   margin: 18px 0 8px;
@@ -114,13 +114,13 @@ p {
 }
 
 a {
-  color: #2b4a7a;
+  color: #7fa8d9;
   text-decoration: none;
-  border-bottom: 1px solid rgba(43, 74, 122, 0.35);
+  border-bottom: 1px solid rgba(127, 168, 217, 0.35);
 }
 
 a:hover {
-  border-bottom-color: #2b4a7a;
+  border-bottom-color: #7fa8d9;
 }
 
 /* CV LISTS (education, appointments, grants, awards) */
@@ -137,7 +137,7 @@ a:hover {
   gap: 16px;
   font-size: 15px;
   padding: 5px 0;
-  border-bottom: 1px dotted #ddd;
+  border-bottom: 1px dotted #3a3b3f;
 }
 
 .cv-list li:last-child {
@@ -150,7 +150,7 @@ a:hover {
 
 .cv-date {
   flex-shrink: 0;
-  color: #555;
+  color: #a8a6a0;
   font-size: 14px;
   white-space: nowrap;
 }
@@ -158,17 +158,17 @@ a:hover {
 .cv-sub {
   display: inline-block;
   margin-top: 3px;
-  color: #666;
+  color: #9a9892;
   font-size: 13px;
 }
 
 .cv-list-pending .cv-main {
-  color: #888;
+  color: #8a8880;
 }
 
 /* PUBLICATIONS */
 .pub-summary {
-  color: #555;
+  color: #a8a6a0;
   font-size: 14px;
 }
 
@@ -184,8 +184,8 @@ a:hover {
 
 /* FOOTER */
 .footer {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #3a3b3f;
   padding-top: 16px;
   font-size: 14px;
-  color: #555;
+  color: #a8a6a0;
 }
