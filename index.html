@@ -21,7 +21,7 @@
       if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
     } catch (e) {}
   </script>
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
   <script data-goatcounter="https://yskong224.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -299,6 +299,7 @@
   const sections = navLinks.map(a => document.querySelector(a.getAttribute('href')));
   function onScroll() {
     toTop.classList.toggle('visible', scrollY > 600);
+    toggle.classList.toggle('floating', scrollY > 600);
     let current = -1;
     sections.forEach((s, i) => { if (s.getBoundingClientRect().top <= 80) current = i; });
     if (innerHeight + scrollY >= document.body.scrollHeight - 2) current = sections.length - 1;
