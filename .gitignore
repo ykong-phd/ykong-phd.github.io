@@ -5,3 +5,6 @@
 .vscode/
 .idea/
 *.swp
+
+images/*.pdf
+images/headshot-original.jpg
