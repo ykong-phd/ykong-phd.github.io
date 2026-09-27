@@ -6,6 +6,11 @@ body {
   line-height: 1.55;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .page {
   max-width: 720px;
   margin: 0 auto;

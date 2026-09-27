@@ -6,7 +6,7 @@
   <meta name="description" content="Youngsun Kong, Ph.D. — Postdoctoral Research Fellow (NIH NRSA F32) in Biomedical Engineering at the University of Connecticut. Signal processing and AI for digital physiomarkers.">
   <title>Youngsun Kong, Ph.D.</title>
   <link rel="icon" type="image/jpeg" href="images/headshot.jpg">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
   <script data-goatcounter="https://yskong224.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -27,7 +27,7 @@
   </div>
 
   <p class="contact-line">
-    <a href="mailto:youngsun.kong.phd@gmail.com">youngsun.kong.phd@gmail.com</a>
+    <a class="email" data-user="youngsun.kong.phd" data-domain="gmail.com">youngsun.kong.phd [at] gmail.com</a>
     &nbsp;&middot;&nbsp;
     <a href="CV.pdf" target="_blank" rel="noopener">CV</a>
     &nbsp;&middot;&nbsp;
@@ -237,7 +237,7 @@
 </section>
 
 <footer class="footer">
-  <p><a href="mailto:youngsun.kong.phd@gmail.com">youngsun.kong.phd@gmail.com</a></p>
+  <p><a class="email" data-user="youngsun.kong.phd" data-domain="gmail.com">youngsun.kong.phd [at] gmail.com</a></p>
   <p class="copyright">&copy; 2026 Youngsun Kong. Figures are adapted from the cited publications.</p>
 </footer>
 
@@ -245,6 +245,11 @@
 
 <a href="#" class="to-top" aria-label="Back to top">&uarr;</a>
 <script>
+  document.querySelectorAll('.email').forEach(a => {
+    const addr = a.dataset.user + '@' + a.dataset.domain;
+    a.href = 'mailto:' + addr;
+    a.textContent = addr;
+  });
   const toTop = document.querySelector('.to-top');
   const navLinks = [...document.querySelectorAll('.toc a')];
   const sections = navLinks.map(a => document.querySelector(a.getAttribute('href')));
