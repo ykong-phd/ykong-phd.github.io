@@ -385,6 +385,12 @@ a:hover {
   margin: 14px 0 12px;
 }
 
+.fig-link {
+  display: block;
+  border-bottom: none;
+  cursor: zoom-in;
+}
+
 .theme figure img {
   display: block;
   width: 100%;
